@@ -2181,29 +2181,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "routes": () => (/* binding */ routes)
 /* harmony export */ });
 var Mostrar = function Mostrar() {
-  return __webpack_require__.e(/*! import() */ "resources_js_components_customer_Mostrar_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/customer/Mostrar.vue */ "./resources/js/components/customer/Mostrar.vue"));
+  return __webpack_require__.e(/*! import() */ "resources_js_components_estudiante_Mostrar_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/estudiante/Mostrar.vue */ "./resources/js/components/estudiante/Mostrar.vue"));
 };
 
 var Crear = function Crear() {
-  return __webpack_require__.e(/*! import() */ "resources_js_components_customer_Crear_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/customer/Crear.vue */ "./resources/js/components/customer/Crear.vue"));
-};
-
-var Editar = function Editar() {
-  return __webpack_require__.e(/*! import() */ "resources_js_components_customer_Editar_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/customer/Editar.vue */ "./resources/js/components/customer/Editar.vue"));
+  return __webpack_require__.e(/*! import() */ "resources_js_components_estudiante_Crear_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./components/estudiante/Crear.vue */ "./resources/js/components/estudiante/Crear.vue"));
 };
 
 var routes = [{
-  name: 'mostrarCustomers',
-  path: '/customers',
+  name: 'mostrarEstudiantes',
+  path: '/estudiante',
   component: Mostrar
 }, {
-  name: 'crearCustomer',
+  name: 'crearEstudiante',
   path: '/crear',
   component: Crear
-}, {
-  name: 'editarCustomer',
-  path: '/editar/:id',
-  component: Editar
 }];
 
 /***/ }),
@@ -19752,10 +19744,10 @@ var render = function() {
                       staticClass: "nav-link",
                       attrs: {
                         "exact-active-class": "active",
-                        to: "/customers"
+                        to: "/estudiante"
                       }
                     },
-                    [_vm._v("Customers")]
+                    [_vm._v("Estudiante")]
                   )
                 ],
                 1
@@ -35231,7 +35223,7 @@ module.exports = JSON.parse('{"_args":[["axios@0.21.4","C:\\\\laragon\\\\www\\\\
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_components_customer_Mostrar_vue":1,"resources_js_components_customer_Crear_vue":1,"resources_js_components_customer_Editar_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_components_estudiante_Mostrar_vue":1,"resources_js_components_estudiante_Crear_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

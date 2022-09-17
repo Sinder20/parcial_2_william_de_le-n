@@ -2,10 +2,10 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\EstudianteController;
 
 
 //de esta forma nos genera todas las rutas
-Route::resource('customer',App\Http\Controllers\CustomerController::class);
+Route::resource('estudiante',App\Http\Controllers\EstudianteController::class);
 
-//Route::resource('customer', CustomerController::class);
+//Route::resource('estudiante', EstudianteController::class);

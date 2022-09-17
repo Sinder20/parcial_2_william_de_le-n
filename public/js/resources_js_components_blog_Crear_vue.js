@@ -1082,7 +1082,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
-      _c("h4", [_vm._v("Crear Customer")])
+      _c("h4", [_vm._v("Crear Estudiante")])
     ])
   },
   function() {

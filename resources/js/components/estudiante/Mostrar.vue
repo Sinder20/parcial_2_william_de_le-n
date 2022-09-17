@@ -1,7 +1,7 @@
 <template>
     <div class="row">
         <div class="col-12 mb-2">
-            <router-link :to='{name:"crearCustomer"}' class="btn btn-warning">Nuevo Registro</router-link>
+            <router-link :to='{name:"crearEstudiante"}' class="btn btn-warning">Nuevo Registro</router-link>
         </div>
         <div class="col-12">             
                     <div class="table-responsive">
@@ -12,19 +12,14 @@
                                     <th>Nombre</th>
                                     <th>Direccion</th>
                                     <th>Numero Telefonico</th>
-                                    <th>Acciones</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr v-for="customer in customers" :key="customer.id">
-                                    <td>{{ customer.id }}</td>
-                                    <td>{{ customer.name }}</td>
-                                    <td>{{ customer.address }}</td>
-                                    <td>{{ customer.phone_number }}</td>
-                                    <td>
-                                        <router-link :to='{name:"editarCustomer",params:{id:customer.id}}' class="btn btn-success">✍</router-link>
-                                        <a type="button" @click="borrarCustomer(customer.id)" class="btn btn-danger">🗑</a>
-                                    </td>
+                                <tr v-for="estudiante in estudaintes" :key="estudaintes.id">
+                                    <td>{{ estudiante.id }}</td>
+                                    <td>{{ estudiante.name }}</td>
+                                    <td>{{ estudiante.address }}</td>
+                                    <td>{{ estudiante.phone_number }}</td>
                                 </tr>
                             </tbody>                         
                         </table>
@@ -35,32 +30,23 @@
 
 <script>
 export default {
-    name:"customers",
+    name:"estudiantes",
     data(){
         return {
-            customers:[]
+            estudaintes:[]
         }
     },
     mounted(){
-        this.mostrarCustomers()
+        this.mostrarEstudiantes()
     },
     methods:{
-        async mostrarCustomers(){
-            await this.axios.get('/api/customer').then(response=>{
-                this.customers = response.data
+        async mostrarEstudiantes(){
+            await this.axios.get('/api/estudiante').then(response=>{
+                this.estudaintes = response.data
             }).catch(error=>{
                 console.log(error)
-                this.customers = []
+                this.estudaintes = []
             })
-        },
-        borrarCustomer(id){
-            if(confirm("¿Confirma eliminar el registro?")){
-                this.axios.delete(`/api/customer/${id}`).then(response=>{
-                    this.mostrarCustomers()
-                }).catch(error=>{
-                    console.log(error)
-                })
-            }
         }
     }
 }

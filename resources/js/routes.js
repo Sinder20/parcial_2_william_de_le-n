@@ -1,22 +1,16 @@
-const Mostrar = () => import('./components/customer/Mostrar.vue')
-const Crear = () => import('./components/customer/Crear.vue')
-const Editar = () => import('./components/customer/Editar.vue')
+const Mostrar = () => import('./components/estudiante/Mostrar.vue')
+const Crear = () => import('./components/estudiante/Crear.vue')
 
 export const routes = [
     {
-        name: 'mostrarCustomers',
-        path: '/customers',
+        name: 'mostrarEstudiantes',
+        path: '/estudiante',
         component: Mostrar
     },
     {
-        name: 'crearCustomer',
+        name: 'crearEstudiante',
         path: '/crear',
         component: Crear
-    },
-    {
-        name: 'editarCustomer',
-        path: '/editar/:id',
-        component: Editar
     }
 
 ]

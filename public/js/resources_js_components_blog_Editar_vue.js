@@ -91,7 +91,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             switch (_context.prev = _context.next) {
               case 0:
                 _context.next = 2;
-                return _this.axios.get("/api/customer/".concat(_this.$route.params.id)).then(function (response) {
+                return _this.axios.get("/api/estudiante/".concat(_this.$route.params.id)).then(function (response) {
                   var _response$data = response.data,
                       name = _response$data.name,
                       address = _response$data.address,
@@ -120,7 +120,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             switch (_context2.prev = _context2.next) {
               case 0:
                 _context2.next = 2;
-                return _this2.axios.put("/api/customer/".concat(_this2.$route.params.id), _this2.blog).then(function (response) {
+                return _this2.axios.put("/api/estudiante/".concat(_this2.$route.params.id), _this2.blog).then(function (response) {
                   _this2.$router.push({
                     name: "mostrarCustomer"
                   });
@@ -1114,7 +1114,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
-      _c("h4", [_vm._v("Editar Customer")])
+      _c("h4", [_vm._v("Editar Estudiante")])
     ])
   },
   function() {

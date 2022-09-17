@@ -105,7 +105,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       var _this2 = this;
 
       if (confirm("¿Confirma eliminar el registro?")) {
-        this.axios["delete"]("/api/customer/".concat(id)).then(function (response) {
+        this.axios["delete"]("/api/estudiante/".concat(id)).then(function (response) {
           _this2.mostrarCustomer();
         })["catch"](function (error) {
           console.log(error);

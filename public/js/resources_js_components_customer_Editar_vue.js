@@ -13,7 +13,7 @@ module.exports = __webpack_require__(/*! regenerator-runtime */ "./node_modules/
 
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/customer/Editar.vue?vue&type=script&lang=js&":
 /*!**********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/customer/Editar.vue?vue&type=script&lang=js& ***!
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/estudiante/Editar.vue?vue&type=script&lang=js& ***!
   \**********************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -91,7 +91,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             switch (_context.prev = _context.next) {
               case 0:
                 _context.next = 2;
-                return _this.axios.get("/api/customer/".concat(_this.$route.params.id)).then(function (response) {
+                return _this.axios.get("/api/estudiante/".concat(_this.$route.params.id)).then(function (response) {
                   var _response$data = response.data,
                       name = _response$data.name,
                       address = _response$data.address,
@@ -120,7 +120,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             switch (_context2.prev = _context2.next) {
               case 0:
                 _context2.next = 2;
-                return _this2.axios.put("/api/customer/".concat(_this2.$route.params.id), _this2.customer).then(function (response) {
+                return _this2.axios.put("/api/estudiante/".concat(_this2.$route.params.id), _this2.customer).then(function (response) {
                   _this2.$router.push({
                     name: "mostrarCustomers"
                   });
@@ -907,7 +907,7 @@ try {
 
 /***/ "./resources/js/components/customer/Editar.vue":
 /*!*****************************************************!*\
-  !*** ./resources/js/components/customer/Editar.vue ***!
+  !*** ./resources/js/components/estudiante/Editar.vue ***!
   \*****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -939,14 +939,14 @@ var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/components/customer/Editar.vue"
+component.options.__file = "resources/js/components/estudiante/Editar.vue"
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
 
 /***/ }),
 
 /***/ "./resources/js/components/customer/Editar.vue?vue&type=script&lang=js&":
 /*!******************************************************************************!*\
-  !*** ./resources/js/components/customer/Editar.vue?vue&type=script&lang=js& ***!
+  !*** ./resources/js/components/estudiante/Editar.vue?vue&type=script&lang=js& ***!
   \******************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -962,7 +962,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./resources/js/components/customer/Editar.vue?vue&type=template&id=373d45b1&":
 /*!************************************************************************************!*\
-  !*** ./resources/js/components/customer/Editar.vue?vue&type=template&id=373d45b1& ***!
+  !*** ./resources/js/components/estudiante/Editar.vue?vue&type=template&id=373d45b1& ***!
   \************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -979,7 +979,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/customer/Editar.vue?vue&type=template&id=373d45b1&":
 /*!***************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/customer/Editar.vue?vue&type=template&id=373d45b1& ***!
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/estudiante/Editar.vue?vue&type=template&id=373d45b1& ***!
   \***************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -1021,7 +1021,7 @@ var render = function() {
                           name: "model",
                           rawName: "v-model",
                           value: _vm.customer.name,
-                          expression: "customer.name"
+                          expression: "estudiante.name"
                         }
                       ],
                       staticClass: "form-control",
@@ -1049,7 +1049,7 @@ var render = function() {
                           name: "model",
                           rawName: "v-model",
                           value: _vm.customer.address,
-                          expression: "customer.address"
+                          expression: "estudiante.address"
                         }
                       ],
                       staticClass: "form-control",
@@ -1077,7 +1077,7 @@ var render = function() {
                           name: "model",
                           rawName: "v-model",
                           value: _vm.customer.phone_number,
-                          expression: "customer.phone_number"
+                          expression: "estudiante.phone_number"
                         }
                       ],
                       staticClass: "form-control",
@@ -1114,7 +1114,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
-      _c("h4", [_vm._v("Editar Customer")])
+      _c("h4", [_vm._v("Editar Estudiante")])
     ])
   },
   function() {

@@ -13,7 +13,7 @@ module.exports = __webpack_require__(/*! regenerator-runtime */ "./node_modules/
 
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/customer/Mostrar.vue?vue&type=script&lang=js&":
 /*!***********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/customer/Mostrar.vue?vue&type=script&lang=js& ***!
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/estudiante/Mostrar.vue?vue&type=script&lang=js& ***!
   \***********************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -104,7 +104,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       var _this2 = this;
 
       if (confirm("¿Confirma eliminar el registro?")) {
-        this.axios["delete"]("/api/customer/".concat(id)).then(function (response) {
+        this.axios["delete"]("/api/estudiante/".concat(id)).then(function (response) {
           _this2.mostrarCustomers();
         })["catch"](function (error) {
           console.log(error);
@@ -882,7 +882,7 @@ try {
 
 /***/ "./resources/js/components/customer/Mostrar.vue":
 /*!******************************************************!*\
-  !*** ./resources/js/components/customer/Mostrar.vue ***!
+  !*** ./resources/js/components/estudiante/Mostrar.vue ***!
   \******************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -914,14 +914,14 @@ var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/components/customer/Mostrar.vue"
+component.options.__file = "resources/js/components/estudiante/Mostrar.vue"
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
 
 /***/ }),
 
 /***/ "./resources/js/components/customer/Mostrar.vue?vue&type=script&lang=js&":
 /*!*******************************************************************************!*\
-  !*** ./resources/js/components/customer/Mostrar.vue?vue&type=script&lang=js& ***!
+  !*** ./resources/js/components/estudiante/Mostrar.vue?vue&type=script&lang=js& ***!
   \*******************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -937,7 +937,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./resources/js/components/customer/Mostrar.vue?vue&type=template&id=0b4a4f3a&":
 /*!*************************************************************************************!*\
-  !*** ./resources/js/components/customer/Mostrar.vue?vue&type=template&id=0b4a4f3a& ***!
+  !*** ./resources/js/components/estudiante/Mostrar.vue?vue&type=template&id=0b4a4f3a& ***!
   \*************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -954,7 +954,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/customer/Mostrar.vue?vue&type=template&id=0b4a4f3a&":
 /*!****************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/customer/Mostrar.vue?vue&type=template&id=0b4a4f3a& ***!
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/estudiante/Mostrar.vue?vue&type=template&id=0b4a4f3a& ***!
   \****************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 

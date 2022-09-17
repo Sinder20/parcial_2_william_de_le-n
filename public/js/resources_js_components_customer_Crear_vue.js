@@ -13,7 +13,7 @@ module.exports = __webpack_require__(/*! regenerator-runtime */ "./node_modules/
 
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/customer/Crear.vue?vue&type=script&lang=js&":
 /*!*********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/customer/Crear.vue?vue&type=script&lang=js& ***!
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/estudiante/Crear.vue?vue&type=script&lang=js& ***!
   \*********************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -875,7 +875,7 @@ try {
 
 /***/ "./resources/js/components/customer/Crear.vue":
 /*!****************************************************!*\
-  !*** ./resources/js/components/customer/Crear.vue ***!
+  !*** ./resources/js/components/estudiante/Crear.vue ***!
   \****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -907,14 +907,14 @@ var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/components/customer/Crear.vue"
+component.options.__file = "resources/js/components/estudiante/Crear.vue"
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
 
 /***/ }),
 
 /***/ "./resources/js/components/customer/Crear.vue?vue&type=script&lang=js&":
 /*!*****************************************************************************!*\
-  !*** ./resources/js/components/customer/Crear.vue?vue&type=script&lang=js& ***!
+  !*** ./resources/js/components/estudiante/Crear.vue?vue&type=script&lang=js& ***!
   \*****************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -930,7 +930,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./resources/js/components/customer/Crear.vue?vue&type=template&id=2199a9fe&":
 /*!***********************************************************************************!*\
-  !*** ./resources/js/components/customer/Crear.vue?vue&type=template&id=2199a9fe& ***!
+  !*** ./resources/js/components/estudiante/Crear.vue?vue&type=template&id=2199a9fe& ***!
   \***********************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -947,7 +947,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/customer/Crear.vue?vue&type=template&id=2199a9fe&":
 /*!**************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/customer/Crear.vue?vue&type=template&id=2199a9fe& ***!
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/estudiante/Crear.vue?vue&type=template&id=2199a9fe& ***!
   \**************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -989,7 +989,7 @@ var render = function() {
                           name: "model",
                           rawName: "v-model",
                           value: _vm.customer.name,
-                          expression: "customer.name"
+                          expression: "estudiante.name"
                         }
                       ],
                       staticClass: "form-control",
@@ -1017,7 +1017,7 @@ var render = function() {
                           name: "model",
                           rawName: "v-model",
                           value: _vm.customer.address,
-                          expression: "customer.address"
+                          expression: "estudiante.address"
                         }
                       ],
                       staticClass: "form-control",
@@ -1045,7 +1045,7 @@ var render = function() {
                           name: "model",
                           rawName: "v-model",
                           value: _vm.customer.phone_number,
-                          expression: "customer.phone_number"
+                          expression: "estudiante.phone_number"
                         }
                       ],
                       staticClass: "form-control",
@@ -1082,7 +1082,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
-      _c("h4", [_vm._v("Registrar Customer")])
+      _c("h4", [_vm._v("Registrar Estudiante")])
     ])
   },
   function() {

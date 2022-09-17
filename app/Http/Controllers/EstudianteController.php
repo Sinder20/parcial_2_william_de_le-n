@@ -2,16 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Customer;
+use App\Models\Estudiante;
 use Illuminate\Http\Request;
 
-class CustomerController extends Controller
+class EstudianteController extends Controller
 {
 
     public function index()
     {
-        $customers = Customer::all(['id','name','address','phone_number']);
-        return response()->json($customers);
+        $estudiante = Estudiante::all(['id','name','address','phone_number']);
+        return response()->json($estudiante);
     }
     public function create()
     {
@@ -19,31 +19,13 @@ class CustomerController extends Controller
     }
     public function store(Request $request)
     {
-        $customer = Customer::create($request->post());
+        $estudiante = Estudiante::create($request->post());
         return response()->json([           
-            'estudiante'=>$customer
+            'estudiante'=>$estudiante
         ]);
     }
-    public function show(Customer $customer)
+    public function show(Estudiante $estudiante)
     {
-        return response()->json($customer);
-    }
-    public function edit(Customer $customer)
-    {
-        //
-    }
-    public function update(Request $request, Customer $customer)
-    {
-        $customer->fill($request->post())->save();
-        return response()->json([            
-            'estudiante'=>$customer
-        ]);
-    }
-    public function destroy(Customer $customer)
-    {
-        $customer->delete();
-        return response()->json([
-            'mensaje'=>'¡Registro eliminado correctamente!'
-        ]);
+        return response()->json($estudiante);
     }
 }
