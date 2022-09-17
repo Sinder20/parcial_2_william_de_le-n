@@ -21,7 +21,7 @@ class CustomerController extends Controller
     {
         $customer = Customer::create($request->post());
         return response()->json([           
-            'customer'=>$customer
+            'estudiante'=>$customer
         ]);
     }
     public function show(Customer $customer)
@@ -36,7 +36,7 @@ class CustomerController extends Controller
     {
         $customer->fill($request->post())->save();
         return response()->json([            
-            'customer'=>$customer
+            'estudiante'=>$customer
         ]);
     }
     public function destroy(Customer $customer)
